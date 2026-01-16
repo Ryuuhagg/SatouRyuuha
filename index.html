@@ -1,10 +1,132 @@
+<!--index.html-->
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8" />
-    <title>test site</title>
+  <meta charset="UTF-8">
+  <title>佐藤龍波のポートフォリオ</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p>Hello</p>
+
+<header class="header">
+  <h1>佐藤 龍波</h1>
+  <p class="role">ゲームプログラマー志望 / 専門学生</p>
+</header>
+<nav class="toc">
+  <ul>
+    <li><a href="#intro">自己紹介</a></li>
+    <li><a href="#skills">スキル</a></li>
+    <li><a href="#works">作品紹介</a></li>
+  </ul>
+</nav>
+<section id="intro" class="section intro">
+  <h2>自己紹介</h2>
+  <div class="intro-flex">
+    <figure class="side_image">
+      <img src="img/証明写真.jpg" class="photo">
+    </figure>
+    <p class="side_text">
+      2005年 10月 28日生まれ<br>
+      出身地 ： 横浜市 鶴見区<br>
+      横浜デジタルアーツ専門学校2年ゲーム科の佐藤龍波と申します。<br>
+      僕は、ゲームプログラマーになり、より多くの人にゲームの魅力を伝えられるようになることを目標に、主にC言語などを学習しています。
+    </p>
+  </div>
+  
+  
+  <div class="container">
+    <table border="1">
+      <tr>
+        <th>趣味</th>
+        <th>ゲーム、カラオケ、漫画、ボカロ</th>
+      </tr>
+      <tr>
+        <th>得意なこと</th>
+        <th>Unityを用いた基礎的なゲームプログラミング</th>
+      </tr>
+      <tr>
+        <th>好きなゲーム</th>
+        <th>カービィのエアライダー、ポケットモンスター(BW、BW2、XY、SM、剣盾、ZA)</th>
+      </tr>
+    </table>
+  </div>
+  
+</section>
+<section id="skills" class="section skills">
+  <h2>使用できる言語・ソフト</h2>
+  <ul>
+    <table border="2">
+      <tr>
+        <th>開発言語</th>
+        <th> C / C++ / C# / Python / JavaScript / HTML / CSS / PHP / SQL</th>
+      </tr>
+      <tr>
+        <th>開発環境</th>
+        <th>Unity、 UnrealEngine4、 VisualStadio、 VisualSutadioCode、 Github</th>
+      </tr>
+    </table>
+  </ul>
+  <h2>取得した資格</h2>
+  <ul>
+    <li>CG クリエイター検定ベーシック</li>
+    <li>情報検定情報活用3級</li>
+  </ul>
+</section>
+
+<section id="works" class="section works">
+  <h2>作品紹介</h2>
+
+  <div class="work-item">
+    <h3 class="work-title">ギャラクシアン</h3>
+    <p class="work-summary">
+      Unityで制作した2Dシューティングゲームです。<br>
+      自機を操作して敵の攻撃を避けながら撃破し、ハイスコアを目指します。
+    </p>
+    <div class="work-images">
+      <img src="img/ギャラクシアンタイトル.png" alt="画像1">
+      <img src="img/ギャラクシアン操作説明.png" alt="画像2">
+      <img src="img/ギャラクシアンゲームシーン.png" alt="画像3">
+    </div>
+    <hr>
+    <div class="work-content">
+      <div class="work-video">
+        <video src="video/galaxian.mp4" controls></video>
+      </div>
+      <div class="work-text">
+        <p class="tech">C#　Unity</p>
+        <p class="explanation">
+          <table border="1">
+            <tr>
+              <th width="200">プラットフォーム</th>
+              <th width="150">PC</th>
+            </tr>
+            <tr>
+              <th>制作人数</th>
+              <th>4人</th>
+            </tr>
+            <tr>
+              <th>担当</th>
+              <th>敵の動き</th>
+            </tr>
+          </table>
+          <h3>工夫したところ</h3>
+          <ul>
+            <li>敵が隊列に復帰する際、<span class="text-accent">ほかの敵との動きにずれが生じないよう</span>、復帰位置に空のオブジェクトを配置して制御するようにした。</li>
+            <li></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+
+
+<footer class="footer">
+  <p>Portfolio</p>
+</footer>
+
 </body>
 </html>
